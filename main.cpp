@@ -79,5 +79,5 @@ int main(){
 	auto stop = high_resolution_clock::now();
 
   auto duration = duration_cast<nanoseconds>(stop - start);
-  std::cout << duration.count() ;
+  std::cout << duration.count();
 }
