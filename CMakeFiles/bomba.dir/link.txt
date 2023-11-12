@@ -1,0 +1,1 @@
+/usr/bin/c++     -faggressive-loop-optimizations  -ftree-vectorize -ffast-math -Ofast   -funroll-loops -march=native -mtune=native   -rdynamic CMakeFiles/bomba.dir/main.cpp.o  -o bomba 
