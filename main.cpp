@@ -1,7 +1,22 @@
  #include<stdlib.h> 	
  #include<stdint.h>
- 
-  	
+ #include<string.h>
+  	//defs
+	#define RANDOMX_ARGON_MEMORY       262144
+	constexpr uint32_t ArgonBlockSize = 1024;
+	#define RANDOMX_DATASET_ITEM_SIZE 64
+
+	constexpr uint32_t CacheSize = RANDOMX_ARGON_MEMORY * ArgonBlockSize;
+	constexpr size_t CacheLineSize = RANDOMX_DATASET_ITEM_SIZE;
+	//end defs
+
+	//func defs
+	uint64_t load64_native(const void *src) {
+		uint64_t w;
+		memcpy(&w, src, sizeof w);
+		return w;
+	}
+	//end funcdefs
 	constexpr uint64_t superscalarMul0 = 6364136223846793005ULL;
 	constexpr uint64_t superscalarAdd1 = 9298411001130361340ULL;
 	constexpr uint64_t superscalarAdd2 = 12065312585734608966ULL;
