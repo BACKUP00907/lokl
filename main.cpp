@@ -12,8 +12,8 @@
 		return memory + (registerValue & mask) * CacheLineSize;
 	}
 
-	void initDatasetItem( uint8_t* out, uint64_t itemNumber) {
-		int_reg_t rl[8];
+	void initDatasetItem( uint8_t* out, uint64_t itemNumber ) {
+		uint64_t rl[8];
 		uint8_t* mixBlock;
 		uint64_t registerValue = itemNumber;
 		rl[0] = (itemNumber + 1) * superscalarMul0;
