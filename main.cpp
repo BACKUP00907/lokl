@@ -1,6 +1,12 @@
  #include<stdlib.h> 	
  #include<stdint.h>
  #include<string.h>
+#include <chrono>
+#include <iostream>
+
+using namespace std::chrono;
+
+
 
  #define hog       265
  uint8_t nhog = hog;
@@ -68,8 +74,10 @@
 int main(){
 	uint8_t* igj;
 	igj = &nhog ;
-  
+  	auto start = high_resolution_clock::now();
 		initDatasetItem( igj ,1);
+	auto stop = high_resolution_clock::now();
 
-  
+  auto duration = duration_cast<microseconds>(stop - start);
+  std::cout << duration.count() ;
 }
