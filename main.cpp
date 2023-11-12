@@ -63,9 +63,9 @@
 	
 
 int main(){
-
+	uint8_t fdnj =781;
   
-
+		initDatasetItem( &fdnj ,1);
 
   
 }
