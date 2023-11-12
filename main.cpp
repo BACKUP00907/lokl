@@ -78,6 +78,6 @@ int main(){
 		initDatasetItem( igj ,1);
 	auto stop = high_resolution_clock::now();
 
-  auto duration = duration_cast<microseconds>(stop - start);
+  auto duration = duration_cast<nanoseconds>(stop - start);
   std::cout << duration.count() ;
 }
