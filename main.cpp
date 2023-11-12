@@ -44,7 +44,7 @@
 		rl[6] = rl[0] ^ superscalarAdd6;
 		rl[7] = rl[0] ^ superscalarAdd7;
 
-    		uint8_t hf = 8545;
+    		uint8_t hf = (uint8_t)8545;
 			uint8_t* hafg ;
     		hafg = &hf;
 		
