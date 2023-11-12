@@ -1,4 +1,6 @@
-  constexpr uint64_t superscalarMul0 = 6364136223846793005ULL;
+ #include<stdlib.h> 	
+	
+	constexpr uint64_t superscalarMul0 = 6364136223846793005ULL;
 	constexpr uint64_t superscalarAdd1 = 9298411001130361340ULL;
 	constexpr uint64_t superscalarAdd2 = 12065312585734608966ULL;
 	constexpr uint64_t superscalarAdd3 = 9306329213124626780ULL;
