@@ -3,7 +3,7 @@
  #include<string.h>
 
  #define hog       265
-constexpr uint8_t nhog = hog;
+ uint8_t nhog = hog;
   	//defs
 	#define RANDOMX_ARGON_MEMORY       262144
 	constexpr uint32_t ArgonBlockSize = 1024;
