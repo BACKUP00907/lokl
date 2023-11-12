@@ -45,7 +45,7 @@
 		rl[7] = rl[0] ^ superscalarAdd7;
 
     		uint8_t hf = 8545;
-		uint8_t* hafg ;
+			uint8_t* hafg ;
     		hafg = &hf;
 		
 		mixBlock = getMixBlock(registerValue, hafg);
