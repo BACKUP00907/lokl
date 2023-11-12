@@ -1,6 +1,9 @@
  #include<stdlib.h> 	
  #include<stdint.h>
  #include<string.h>
+
+ #define hog       265
+constexpr uint8_t nhog = hog;
   	//defs
 	#define RANDOMX_ARGON_MEMORY       262144
 	constexpr uint32_t ArgonBlockSize = 1024;
@@ -63,9 +66,10 @@
 	
 
 int main(){
-	uint8_t fdnj =781;
+	uint8_t* igj;
+	igj = &nhog ;
   
-		initDatasetItem( &fdnj ,1);
+		initDatasetItem( igj ,1);
 
   
 }
